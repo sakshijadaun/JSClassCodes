@@ -183,13 +183,13 @@
 //     i++;
 // }while( i <= 10);
 
-+++++++++++++++++++++++++++ document.write() +++++++++++++++++++
+// +++++++++++++++++++++++++++ document.write() +++++++++++++++++++
 
-document.write("Hello World");
+// document.write("Hello World");
 
-//++++++++++++++++++++++ Take input from user using prompt() +++++++++++++++++++++++++
+++++++++++++++++++++++ Take input from user using prompt() +++++++++++++++++++++++++
 
-// prompt("Enter Your name", "name"); 
+prompt("Enter Your name", "name"); 
 
 
 
