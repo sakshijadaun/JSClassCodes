@@ -112,55 +112,55 @@
 
 //++++++++++++++++++++++ Comparisons of Datatypes ++++++++++++++++++++
 
-console.log("2" > 1);   op = true (comparison operator convert values to no so values are converted to number before comparison)
-console.log("02" > 1);  op = true
+// console.log("2" > 1);   op = true (comparison operator convert values to no so values are converted to number before comparison)
+// console.log("02" > 1);  op = true
 
-console.log(null > 0);   op = false
-console.log(null == 0);  op = false
-console.log(null >= 0);  op = true (equality check and comparison operator work differently comparison operator convert null to zero so it gives true)
+// console.log(null > 0);   op = false
+// console.log(null == 0);  op = false
+// console.log(null >= 0);  op = true (equality check and comparison operator work differently comparison operator convert null to zero so it gives true)
 
-console.log(undefined == 0);  op = false
-console.log(undefined >= 0);  op = false
-console.log(undefined > 0);   op = false
+// console.log(undefined == 0);  op = false
+// console.log(undefined >= 0);  op = false
+// console.log(undefined > 0);   op = false
 
-console.log(NaN == 0);        op = false
-console.log(NaN >= 0);        op = false
-console.log(NaN > 0);         op = false
+// console.log(NaN == 0);        op = false
+// console.log(NaN >= 0);        op = false
+// console.log(NaN > 0);         op = false
 
 //++++++++++++++++++++++ CONDITIONALS ++++++++++++++++++++++++
 
-// var boolean = true;
-// if(boolean){
-//     console.log(!boolean);
-// }
+var boolean = true;
+if(boolean){
+    console.log(!boolean);
+}
 
-// var marks = 50;
-// if (marks > 50){
-//     console.log("Pass");
-// }else{
-//     console.log("Fail");
-// }
+var marks = 50;
+if (marks > 50){
+    console.log("Pass");
+}else{
+    console.log("Fail");
+}
 
-// var marks = 91;
-// if(marks < 90){
-//     console.log("fail");
-// }else if(marks > 90){
-//     console.log("Pass");
-// }else{
-//     console.log("Promoted");
-// }
+var marks = 91;
+if(marks < 90){
+    console.log("fail");
+}else if(marks > 90){
+    console.log("Pass");
+}else{
+    console.log("Promoted");
+}
 
-// var number = '1';
-// switch(number){
-//     case 1: 
-//         console.log("Number is 1");
-//         break;
-//     case 2:
-//         console.log("Number is 2");
-//         break;
-//     default:
-//         console.log("NO number");
-// }
+var number = '1';
+switch(number){
+    case 1: 
+        console.log("Number is 1");
+        break;
+    case 2:
+        console.log("Number is 2");
+        break;
+    default:
+        console.log("NO number");
+}
 
 
 //++++++++++++++++++++++ LOOPS ++++++++++++++++++++++++
