@@ -7,5 +7,6 @@ JsBasic1 File contains these topics :-
 4- Operators
 5- Comparison of Operators
 6- Conditional Statement
-7- document.write() method
-8- Take input from user
+7- loops
+8- document.write() method
+9- Take input from user
