@@ -19,96 +19,96 @@
 
 //++++++++++++++++++++++ DATA TYPE ++++++++++++++++++++++++
 
-let b;
-console.log(typeof(b));    OUTPUT -> Undefined
+// let b;
+// console.log(typeof(b));    OUTPUT -> Undefined
 
-let a =  b +'2';
-console.log(b-'2');        OUTPUT = Nan
-console.log(typeof(a));    OUTPUT = String
+// let a =  b +'2';
+// console.log(b-'2');        OUTPUT = Nan
+// console.log(typeof(a));    OUTPUT = String
 
-let c= null;
-console.log(typeof(c));    OUTPUT = object
+// let c= null;
+// console.log(typeof(c));    OUTPUT = object
 
-console.log(12-"ab");      OUTPUT = Nan
-console.log(15+"sakshi");  OUTPUT = 15sakshi
-console.log(typeof(15+"Sakshi"));     OUTPUT = string
+// console.log(12-"ab");      OUTPUT = Nan
+// console.log(15+"sakshi");  OUTPUT = 15sakshi
+// console.log(typeof(15+"Sakshi"));     OUTPUT = string
 
-let infinity = 2579251091019159875190571470175185;
-console.log(infinity);      OUTPUT = 25792510910000000000000000
-console.log(typeof(infinity));    OUTPUT = number
+// let infinity = 2579251091019159875190571470175185;
+// console.log(infinity);      OUTPUT = 25792510910000000000000000
+// console.log(typeof(infinity));    OUTPUT = number
 
-let f = 3;
-let g= 'harsh';
-let h = 3 - 'harsh';
-let j = 'jadaun'* 3.8;
-console.log(f+g);          op = 3harsh
-console.log(f*g);          op = nan
-console.log(f/g);          op = nan
-console.log(f-g);          op = nan
-console.log(f%g);          op = nan
-console.log(f**g);         op = nan
-console.log(j);            op = nan
+// let f = 3;
+// let g= 'harsh';
+// let h = 3 - 'harsh';
+// let j = 'jadaun'* 3.8;
+// console.log(f+g);          op = 3harsh
+// console.log(f*g);          op = nan
+// console.log(f/g);          op = nan
+// console.log(f-g);          op = nan
+// console.log(f%g);          op = nan
+// console.log(f**g);         op = nan
+// console.log(j);            op = nan
 
-let i = 'sharma';
-let h = 3 - 'harsh';
-console.log(h+i);          op = nansharma
-console.log(h-i);          op = nan
+// let i = 'sharma';
+// let h = 3 - 'harsh';
+// console.log(h+i);          op = nansharma
+// console.log(h-i);          op = nan
 
-console.log(isNaN(h));         op = true
-console.log(Number.isNaN(h));  op = true
-console.log(isNaN(i));         op = true
-console.log(isNaN(h === j));   op = true (because nan === nan return false isNan(false) then it returns true)
-console.log(isNaN(h === j));   op = true
-console.log(isNaN(f));         op = false;
-console.log(Number.isNaN(f));  op = false;
-console.log(isNaN(0/0));       op = true;  (0/0 results as nan so output is nan)
-console.log(isNaN(null));      op = false; (null is treated as a numeric value in this context)
+// console.log(isNaN(h));         op = true
+// console.log(Number.isNaN(h));  op = true
+// console.log(isNaN(i));         op = true
+// console.log(isNaN(h === j));   op = true (because nan === nan return false isNan(false) then it returns true)
+// console.log(isNaN(h === j));   op = true
+// console.log(isNaN(f));         op = false;
+// console.log(Number.isNaN(f));  op = false;
+// console.log(isNaN(0/0));       op = true;  (0/0 results as nan so output is nan)
+// console.log(isNaN(null));      op = false; (null is treated as a numeric value in this context)
 
-let str = "Shanvi";
-console.log(str[1]);     op = h
+// let str = "Shanvi";
+// console.log(str[1]);     op = h
 
 
 //++++++++++++++++++++++ OPERATORS ++++++++++++++++++++++++
 
-// var a = 2;
-// var b = 3;
-// console.log(a+b);                 op = 5
+var a = 2;
+var b = 3;
+console.log(a+b);                 op = 5
          
-// console.log(0/0);                 op = nan
-// console.log(1/0);                 op = Infinity
-// console.log(Number.MAX_VALUE/0);  op = Infinity
+console.log(0/0);                 op = nan
+console.log(1/0);                 op = Infinity
+console.log(Number.MAX_VALUE/0);  op = Infinity
 
-// console.log(0/1);                 op = 0
-// console.log(1/1);                 op = 1
-// console.log(Number.MAX_VALUE/1);  op = 1.793205845057e+308
+console.log(0/1);                 op = 0
+console.log(1/1);                 op = 1
+console.log(Number.MAX_VALUE/1);  op = 1.793205845057e+308
 
-// console.log(1/Number.MAX_VALUE);                   op = 5e-234
-// console.log(0/Number.MAX_VALUE);                   op = 0
-// console.log(Number.MAX_VALUE / Number.MIN_VALUE);  op = Infinity
+console.log(1/Number.MAX_VALUE);                   op = 5e-234
+console.log(0/Number.MAX_VALUE);                   op = 0
+console.log(Number.MAX_VALUE / Number.MIN_VALUE);  op = Infinity
 
 
-// console.log(0%0);                  op = nan
-// console.log(1%0);                  op = nan
-// console.log(Number.MAX_VALUE % 0)  op = nan
+console.log(0%0);                  op = nan
+console.log(1%0);                  op = nan
+console.log(Number.MAX_VALUE % 0)  op = nan
         
-// console.log(0%1);                 op = 0
-// console.log(Number.MAX_VALUE % 1) op = 0
-// console.log(1%1)                  op = 0
+console.log(0%1);                 op = 0
+console.log(Number.MAX_VALUE % 1) op = 0
+console.log(1%1)                  op = 0
 
-// console.log(1 % Number.MAX_VALUE)                 op = 1
-// console.log(0 % Number.MAX_VALUE)                 op = 0
-// console.log(Number.MAX_VALUE % Number.MAX_VALUE)  op = 0
+console.log(1 % Number.MAX_VALUE)                 op = 1
+console.log(0 % Number.MAX_VALUE)                 op = 0
+console.log(Number.MAX_VALUE % Number.MAX_VALUE)  op = 0
 
-// console.log(Number.MAX_VALUE *  0);               op = 0
-// console.log(Number.MAX_VALUE *  5);               op = 1.53252364758e+308
-// console.log(Number.MAX_VALUE * Number.MIN_VALUE); op = 0
+console.log(Number.MAX_VALUE *  0);               op = 0
+console.log(Number.MAX_VALUE *  5);               op = 1.53252364758e+308
+console.log(Number.MAX_VALUE * Number.MIN_VALUE); op = 0
 
-// console.log(Number.MAX_VALUE ** 2)   op = infinity
-// console.log(Number.MAX_VALUE ** 0)   op = 1
+console.log(Number.MAX_VALUE ** 2)   op = infinity
+console.log(Number.MAX_VALUE ** 0)   op = 1
 
-// console.log("1" == 1);        op = true
-// console.log("1" === 1);       op = false
-// console.log(NaN === Nan)      op = flase 
+console.log("1" == 1);        op = true
+console.log("1" === 1);       op = false
+console.log(NaN === Nan)      op = flase 
 
 //++++++++++++++++++++++ Comparisons of Datatypes ++++++++++++++++++++
 
