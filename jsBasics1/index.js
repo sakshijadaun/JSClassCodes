@@ -163,29 +163,29 @@
 // }
 
 
-++++++++++++++++++++++ LOOPS ++++++++++++++++++++++++
+// ++++++++++++++++++++++ LOOPS ++++++++++++++++++++++++
 
-print number 1 to 10 using for, while, do while
+// print number 1 to 10 using for, while, do while
 
-for(var i =1; i<=10; i++){
-    console.log(i);
-}
+// for(var i =1; i<=10; i++){
+//     console.log(i);
+// }
 
-var i =1;
-while(i<=10){
-    console.log(i);
-    i++;
-}
+// var i =1;
+// while(i<=10){
+//     console.log(i);
+//     i++;
+// }
 
-var i =1;  This do while loop executed at least once. this is the difference from the for and while loop           
-do{
-    console.log(i);
-    i++;
-}while( i <= 10);
+// var i =1;  This do while loop executed at least once. this is the difference from the for and while loop           
+// do{
+//     console.log(i);
+//     i++;
+// }while( i <= 10);
 
-// +++++++++++++++++++++++++++ document.write() +++++++++++++++++++
++++++++++++++++++++++++++++ document.write() +++++++++++++++++++
 
-// document.write("Hello World");
+document.write("Hello World");
 
 //++++++++++++++++++++++ Take input from user using prompt() +++++++++++++++++++++++++
 
