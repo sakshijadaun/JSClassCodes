@@ -70,62 +70,62 @@
 
 //++++++++++++++++++++++ OPERATORS ++++++++++++++++++++++++
 
-var a = 2;
-var b = 3;
-console.log(a+b);                 op = 5
+// var a = 2;
+// var b = 3;
+// console.log(a+b);                 op = 5
          
-console.log(0/0);                 op = nan
-console.log(1/0);                 op = Infinity
-console.log(Number.MAX_VALUE/0);  op = Infinity
+// console.log(0/0);                 op = nan
+// console.log(1/0);                 op = Infinity
+// console.log(Number.MAX_VALUE/0);  op = Infinity
 
-console.log(0/1);                 op = 0
-console.log(1/1);                 op = 1
-console.log(Number.MAX_VALUE/1);  op = 1.793205845057e+308
+// console.log(0/1);                 op = 0
+// console.log(1/1);                 op = 1
+// console.log(Number.MAX_VALUE/1);  op = 1.793205845057e+308
 
-console.log(1/Number.MAX_VALUE);                   op = 5e-234
-console.log(0/Number.MAX_VALUE);                   op = 0
-console.log(Number.MAX_VALUE / Number.MIN_VALUE);  op = Infinity
+// console.log(1/Number.MAX_VALUE);                   op = 5e-234
+// console.log(0/Number.MAX_VALUE);                   op = 0
+// console.log(Number.MAX_VALUE / Number.MIN_VALUE);  op = Infinity
 
 
-console.log(0%0);                  op = nan
-console.log(1%0);                  op = nan
-console.log(Number.MAX_VALUE % 0)  op = nan
+// console.log(0%0);                  op = nan
+// console.log(1%0);                  op = nan
+// console.log(Number.MAX_VALUE % 0)  op = nan
         
-console.log(0%1);                 op = 0
-console.log(Number.MAX_VALUE % 1) op = 0
-console.log(1%1)                  op = 0
+// console.log(0%1);                 op = 0
+// console.log(Number.MAX_VALUE % 1) op = 0
+// console.log(1%1)                  op = 0
 
-console.log(1 % Number.MAX_VALUE)                 op = 1
-console.log(0 % Number.MAX_VALUE)                 op = 0
-console.log(Number.MAX_VALUE % Number.MAX_VALUE)  op = 0
+// console.log(1 % Number.MAX_VALUE)                 op = 1
+// console.log(0 % Number.MAX_VALUE)                 op = 0
+// console.log(Number.MAX_VALUE % Number.MAX_VALUE)  op = 0
 
-console.log(Number.MAX_VALUE *  0);               op = 0
-console.log(Number.MAX_VALUE *  5);               op = 1.53252364758e+308
-console.log(Number.MAX_VALUE * Number.MIN_VALUE); op = 0
+// console.log(Number.MAX_VALUE *  0);               op = 0
+// console.log(Number.MAX_VALUE *  5);               op = 1.53252364758e+308
+// console.log(Number.MAX_VALUE * Number.MIN_VALUE); op = 0
 
-console.log(Number.MAX_VALUE ** 2)   op = infinity
-console.log(Number.MAX_VALUE ** 0)   op = 1
+// console.log(Number.MAX_VALUE ** 2)   op = infinity
+// console.log(Number.MAX_VALUE ** 0)   op = 1
 
-console.log("1" == 1);        op = true
-console.log("1" === 1);       op = false
-console.log(NaN === Nan)      op = flase 
+// console.log("1" == 1);        op = true
+// console.log("1" === 1);       op = false
+// console.log(NaN === Nan)      op = false 
 
 //++++++++++++++++++++++ Comparisons of Datatypes ++++++++++++++++++++
 
-// console.log("2" > 1);   op = true (comparison operator convert values to no so values are converted to number before comparison)
-// console.log("02" > 1);  op = true
+console.log("2" > 1);   op = true (comparison operator convert values to no so values are converted to number before comparison)
+console.log("02" > 1);  op = true
 
-// console.log(null > 0);   op = false
-// console.log(null == 0);  op = false
-// console.log(null >= 0);  op = true (equality check and comparison operator work differently comparison operator convert null to zero so it gives true)
+console.log(null > 0);   op = false
+console.log(null == 0);  op = false
+console.log(null >= 0);  op = true (equality check and comparison operator work differently comparison operator convert null to zero so it gives true)
 
-// console.log(undefined == 0);  op = false
-// console.log(undefined >= 0);  op = false
-// console.log(undefined > 0);   op = false
+console.log(undefined == 0);  op = false
+console.log(undefined >= 0);  op = false
+console.log(undefined > 0);   op = false
 
-// console.log(NaN == 0);        op = false
-// console.log(NaN >= 0);        op = false
-// console.log(NaN > 0);         op = false
+console.log(NaN == 0);        op = false
+console.log(NaN >= 0);        op = false
+console.log(NaN > 0);         op = false
 
 //++++++++++++++++++++++ CONDITIONALS ++++++++++++++++++++++++
 
