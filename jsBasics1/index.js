@@ -129,59 +129,59 @@
 
 //++++++++++++++++++++++ CONDITIONALS ++++++++++++++++++++++++
 
-var boolean = true;
-if(boolean){
-    console.log(!boolean);
-}
-
-var marks = 50;
-if (marks > 50){
-    console.log("Pass");
-}else{
-    console.log("Fail");
-}
-
-var marks = 91;
-if(marks < 90){
-    console.log("fail");
-}else if(marks > 90){
-    console.log("Pass");
-}else{
-    console.log("Promoted");
-}
-
-var number = '1';
-switch(number){
-    case 1: 
-        console.log("Number is 1");
-        break;
-    case 2:
-        console.log("Number is 2");
-        break;
-    default:
-        console.log("NO number");
-}
-
-
-//++++++++++++++++++++++ LOOPS ++++++++++++++++++++++++
-
-// print number 1 to 10 using for, while, do while
-
-// for(var i =1; i<=10; i++){
-//     console.log(i);
+// var boolean = true;
+// if(boolean){
+//     console.log(!boolean);
 // }
 
-// var i =1;
-// while(i<=10){
-//     console.log(i);
-//     i++;
+// var marks = 50;
+// if (marks > 50){
+//     console.log("Pass");
+// }else{
+//     console.log("Fail");
 // }
 
-// var i =1;  This do while loop executed at least once. this is the difference from the for and while loop           
-// do{
-//     console.log(i);
-//     i++;
-// }while( i <= 10);
+// var marks = 91;
+// if(marks < 90){
+//     console.log("fail");
+// }else if(marks > 90){
+//     console.log("Pass");
+// }else{
+//     console.log("Promoted");
+// }
+
+// var number = '1';
+// switch(number){
+//     case 1: 
+//         console.log("Number is 1");
+//         break;
+//     case 2:
+//         console.log("Number is 2");
+//         break;
+//     default:
+//         console.log("NO number");
+// }
+
+
+++++++++++++++++++++++ LOOPS ++++++++++++++++++++++++
+
+print number 1 to 10 using for, while, do while
+
+for(var i =1; i<=10; i++){
+    console.log(i);
+}
+
+var i =1;
+while(i<=10){
+    console.log(i);
+    i++;
+}
+
+var i =1;  This do while loop executed at least once. this is the difference from the for and while loop           
+do{
+    console.log(i);
+    i++;
+}while( i <= 10);
 
 // +++++++++++++++++++++++++++ document.write() +++++++++++++++++++
 
