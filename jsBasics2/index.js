@@ -93,19 +93,19 @@
 // than it reflects in original value.
 
 // ++++++++++++++++++++++++++++++ PRIMITIVE DATATYPE ++++++++++++++++++++++++++++++++
-// let a = 10;
-// let b = a;
-//  a++;
-//  console.log(a);
-//  console.log(b);
+let a = 10;
+let b = a;
+ a++;
+ console.log(a);
+ console.log(b);
 
-// let a=10;
-// function inc(a){
-//     a++;
-//     console.log(a);
-// }
-// inc(a);
-// console.log(a);
+let a=10;
+function inc(a){
+    a++;
+    console.log(a);
+}
+inc(a);
+console.log(a);
 
 //+++++++++++++++++++++++++++++++++ REFERENCE DATATYPE +++++++++++++++++++++++++++++++
 // let a = {value: 10};
