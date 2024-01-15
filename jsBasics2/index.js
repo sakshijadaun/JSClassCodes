@@ -313,41 +313,41 @@
 
 //++++++++++++++++++++++++++ Objects as keys-> objects can add as a key in maps ++++++++++++++++++++++++++++++++
 
-create Objects 
-const apples = {name: 'Apples'};
-const bananas = {name: 'Bananas'};
-const oranges = {name: 'Oranges'};
+// create Objects 
+// const apples = {name: 'Apples'};
+// const bananas = {name: 'Bananas'};
+// const oranges = {name: 'Oranges'};
 
-//create a map
-const fruits = new Map();
+// //create a map
+// const fruits = new Map();
 
-//add object keys to the map
-fruits.set(apples, 500);
-fruits.set(bananas, 300);
-fruits.set(oranges, 200);
+// //add object keys to the map
+// fruits.set(apples, 500);
+// fruits.set(bananas, 300);
+// fruits.set(oranges, 200);
 
-console.log(fruits.get(apples));   //print 500
-console.log(fruits.get(bananas));  //print 300
-console.log(fruits.get(oranges));  //print 200
+// console.log(fruits.get(apples));   //print 500
+// console.log(fruits.get(bananas));  //print 300
+// console.log(fruits.get(oranges));  //print 200
 
 //+++++++++++++++++++++++++++++++++++++++++++ Iterate over Maps ++++++++++++++++++++++++++++++++++++++++
 
-// let map = new Map([
-//     ["father","mother"],
-//     ["brother","sister"]
+let map = new Map([
+    ["father","mother"],
+    ["brother","sister"]
 
-// ]);
+]);
 
-//++++++++++++++++++ for-of loop +++++++++++++++++++++++++
-// for (const key of map) {
-//   console.log(key);   //this will print map
-//   console.log(map[key]);  //this will print undefined
-// }
+++++++++++++++++++ for-of loop +++++++++++++++++++++++++
+for (const key of map) {
+  console.log(key);   //this will print map
+  console.log(map[key]);  //this will print undefined
+}
 
-//+++++++++++++++++++++++++++++ for-in loop +++++++++++++++++++++
-// for(const key in map){
-//     console.log(key);    //can not directly use for-in loop 
-// }
++++++++++++++++++++++++++++++ for-in loop +++++++++++++++++++++
+for(const key in map){
+    console.log(key);    //can not directly use for-in loop 
+}
 
 
 
