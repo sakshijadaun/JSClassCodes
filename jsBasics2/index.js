@@ -210,61 +210,61 @@
 
 //+++++++++++++++++++++++++++++++++++++++ Using iteration +++++++++++++++++++++++++++++++++++++++++++++++
 
-let src={
-    a: 10,
-    b: 11,
-    c: 12
-};
-let dest = {};
+// let src={
+//     a: 10,
+//     b: 11,
+//     c: 12
+// };
+// let dest = {};
 
-for(var key in src){
-    dest[key]=src[key];
-    console.log(key,src[key]);
-}
-console.log(dest);
-checking it copy in dest object or points to reference number so it copy in dest object
-src.a++;
-console.log(src)
-console.log(dest);
+// for(var key in src){
+//     dest[key]=src[key];
+//     console.log(key,src[key]);
+// }
+// console.log(dest);
+// checking it copy in dest object or points to reference number so it copy in dest object
+// src.a++;
+// console.log(src)
+// console.log(dest);
 
-+++++++++++++++++++++++++++++++++++++ Object cloning using  assign +++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++ Object cloning using  assign +++++++++++++++++++++++++++++++++++++
 
-let src ={
-    a: 10,
-    b: 11, 
-    c: 12
-};
+// let src ={
+//     a: 10,
+//     b: 11, 
+//     c: 12
+// };
 
-let src2 = { d: 13};
+// let src2 = { d: 13};
 
-let dest = Object.assign({},src,src2);
-console.log(dest);
+// let dest = Object.assign({},src,src2);
+// console.log(dest);
 
-src.a++;
-console.log(dest);
+// src.a++;
+// console.log(dest);
 
-+++++++++++++++++++++++++++++++++++++++ Object cloning using spread ++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++ Object cloning using spread ++++++++++++++++++++++++++++++++++++
 
-let src ={
-    a: 10,
-    b: 11, 
-    c: 12
-};
+// let src ={
+//     a: 10,
+//     b: 11, 
+//     c: 12
+// };
 
-let dest ={...src};   
-console.log(dest);
+// let dest ={...src};   
+// console.log(dest);
 
-src.a++;
-console.log(dest);
+// src.a++;
+// console.log(dest);
 
 //+++++++++++++++++++++++++++++++++ Maps ++++++++++++++++++++++++++++++++++++++++++++
 
-//+++++++++++++++++++++++++++++++++ create maps +++++++++++++++++++++++++++++++++++++
-// const fruits = new Map([
-//     ["apples",500],
-//     ["bananas", 300],
-//     ["oranges", 200]
-// ]);
++++++++++++++++++++++++++++++++++ create maps +++++++++++++++++++++++++++++++++++++
+const fruits = new Map([
+    ["apples",500],
+    ["bananas", 300],
+    ["oranges", 200]
+]);
 
 //+++++++++++++++++++++++++++++++ Methods on Maps +++++++++++++++++++++++++++++++++++
 
