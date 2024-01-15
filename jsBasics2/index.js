@@ -259,56 +259,56 @@
 
 //+++++++++++++++++++++++++++++++++ Maps ++++++++++++++++++++++++++++++++++++++++++++
 
-+++++++++++++++++++++++++++++++++ create maps +++++++++++++++++++++++++++++++++++++
-const fruits = new Map([
-    ["apples",500],
-    ["bananas", 300],
-    ["oranges", 200]
-]);
+// +++++++++++++++++++++++++++++++++ create maps +++++++++++++++++++++++++++++++++++++
+// const fruits = new Map([
+//     ["apples",500],
+//     ["bananas", 300],
+//     ["oranges", 200]
+// ]);
 
-//+++++++++++++++++++++++++++++++ Methods on Maps +++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++ Methods on Maps +++++++++++++++++++++++++++++++++++
 
-//+++++++++++++++++++ set() method ++++++++++++++++++
-// fruits.set("mango",400);   //this sets the property to fruits map
++++++++++++++++++++ set() method ++++++++++++++++++
+fruits.set("mango",400);   //this sets the property to fruits map
 
-//+++++++++++++++++++ get() method ++++++++++++++++++
-// console.log(fruits.get("apples"));      //this will return the value of apples key
++++++++++++++++++++ get() method ++++++++++++++++++
+console.log(fruits.get("apples"));      //this will return the value of apples key
 
-//+++++++++++++++++++ size property  ++++++++++++++++++
-// console.log(fruits.size);
++++++++++++++++++++ size property  ++++++++++++++++++
+console.log(fruits.size);
 
-//++++++++++++++++++ delete() method ++++++++++++++++++
-// fruits.delete("apples");   //this will delete apple key and value associated with this key
-// console.log(fruits);       //this will print the map after delete the apples key
+++++++++++++++++++ delete() method ++++++++++++++++++
+fruits.delete("apples");   //this will delete apple key and value associated with this key
+console.log(fruits);       //this will print the map after delete the apples key
 
-//+++++++++++++++++++ clear() method ++++++++++++++++++
-// fruits.clear();              //this will remove all elements from a map
-// console.log(fruits);         //this will print empty map
++++++++++++++++++++ clear() method ++++++++++++++++++
+fruits.clear();              //this will remove all elements from a map
+console.log(fruits);         //this will print empty map
 
-//+++++++++++++++++++ has() method ++++++++++++++++++
-// console.log(fruits.has("apples"));         //this will return true because fruits map has apples property
++++++++++++++++++++ has() method ++++++++++++++++++
+console.log(fruits.has("apples"));         //this will return true because fruits map has apples property
 
-//+++++++++++++++++++ typeof() method ++++++++++++++++++
-// console.log(typeof(fruits));     //this will print object because map are objects
++++++++++++++++++++ typeof() method ++++++++++++++++++
+console.log(typeof(fruits));     //this will print object because map are objects
 
-//+++++++++++++++++++ instanceof() method ++++++++++++++++++
-// console.log(fruits instanceof Map);   //return true because fruits is a map object
++++++++++++++++++++ instanceof() method ++++++++++++++++++
+console.log(fruits instanceof Map);   //return true because fruits is a map object
 
-//+++++++++++++++++++ forEach() method ++++++++++++++++++
-// fruits.forEach(function(value,key){
-//     console.log(`${key} = ${value}`);
-// });                                    //this will print map like apples = 500
++++++++++++++++++++ forEach() method ++++++++++++++++++
+fruits.forEach(function(value,key){
+    console.log(`${key} = ${value}`);
+});                                    //this will print map like apples = 500
 
-//+++++++++++++++++++ entries() method ++++++++++++++++++
-// let text = "";
-// for(const x of fruits.entries()){
-//     text += x;
-// };
-// console.log(text);   //this will print output apples,500
++++++++++++++++++++ entries() method ++++++++++++++++++
+let text = "";
+for(const x of fruits.entries()){
+    text += x;
+};
+console.log(text);   //this will print output apples,500
 
-//++++++++++++++++++++++++ Note +++++++++++++++++++++++++
-//Here also methods like keys() which can access keys of map
-//values() mehtod which can access values of a map
+++++++++++++++++++++++++ Note +++++++++++++++++++++++++
+Here also methods like keys() which can access keys of map
+values() mehtod which can access values of a map
 
 
 //++++++++++++++++++++++++++ Objects as keys-> objects can add as a key in maps ++++++++++++++++++++++++++++++++
