@@ -9,41 +9,41 @@
 // };
 // rectangle.draw();
 
-+++++++++++++++++++++++ Objects Using Factory Function ++++++++++++++++++++++++++++
+// +++++++++++++++++++++++ Objects Using Factory Function ++++++++++++++++++++++++++++
 
-function createRectangle(){
-    let rectangle = {    //(or return rectangle{...})
-        length: 1,
-        width: 2,
-        draw(){        // (or draw: function(){....})
-            console.log("Hii");
-        }
-    };
-    return rectangle;
-}
+// function createRectangle(){
+//     let rectangle = {    //(or return rectangle{...})
+//         length: 1,
+//         width: 2,
+//         draw(){        // (or draw: function(){....})
+//             console.log("Hii");
+//         }
+//     };
+//     return rectangle;
+// }
 
-let rectangle1 = createRectangle();
-rectangle1.draw();
-console.log(typeof createRectangle());  //this will give object
-console.log(typeof createRectangle);   //this will give function
-console.log(typeof rectangle1);        //this will give object
+// let rectangle1 = createRectangle();
+// rectangle1.draw();
+// console.log(typeof createRectangle());  //this will give object
+// console.log(typeof createRectangle);   //this will give function
+// console.log(typeof rectangle1);        //this will give object
 
 
 //+++++++++++++++++++++++ FACTORY FUNCTION USING INPUT PARAMETER ++++++++++++++++++++++
 
-//  function createRectangle(length,width){
-//     return rectangle = {
-//         length,    (it means length: length or we can use other variable name also)
-//         width,     (it means width: width)
-//         draw(){
-//             console.log("Hello")
-//         }
-//     };
+ function createRectangle(length,width){
+    return rectangle = {
+        length,    (it means length: length or we can use other variable name also)
+        width,     (it means width: width)
+        draw(){
+            console.log("Hello")
+        }
+    };
 
-//  }
-//  let rectangle1 = createRectangle(2,4);
-//  console.log(rectangle1.len);
-//  rectangle1.draw();
+ }
+ let rectangle1 = createRectangle(2,4);
+ console.log(rectangle1.len);
+ rectangle1.draw();
 
 //+++++++++++++++++++++++++++++ CONSTRUCTOR FUNCTION +++++++++++++++++++++++++++++++++
 
