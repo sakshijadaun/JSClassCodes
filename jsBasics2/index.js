@@ -125,70 +125,70 @@
 
 //++++++++++++++++++++++ ITERATING OVER OBJECTS USING FOR-IN LOOP AND FOR-OF LOOP +++++++++++++++++++++++++
 
-let rec = {
-    length: 2,
-    width: 3,
-    1 : 4      //This 1 property will iterate first before the lenght and the width
-};
-rec.height = 5;  //adding a property to rec object
+// let rec = {
+//     length: 2,
+//     width: 3,
+//     1 : 4      //This 1 property will iterate first before the lenght and the width
+// };
+// rec.height = 5;  //adding a property to rec object
 
-++++++++++++++++++++++++++++++ Print key and value (for-in loop) ++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++ Print key and value (for-in loop) ++++++++++++++++++++++++++++++++++++++
 
-for(let key in rec){ 
-    here key are reflected through value variable and key and value both are reflected through rec[key]
+// for(let key in rec){ 
+//     here key are reflected through value variable and key and value both are reflected through rec[key]
 
-    console.log(key);     //this will print keys of object  1,length,width
-    console.log(rec[key]);   //this will print value of keys 4,3,2
+//     console.log(key);     //this will print keys of object  1,length,width
+//     console.log(rec[key]);   //this will print value of keys 4,3,2
     
-}
+// }
 
-print key value both at the same time of object
-for(key in rec){
-    console.log(`${key} : ${rec[key]}`);
-}
+// print key value both at the same time of object
+// for(key in rec){
+//     console.log(`${key} : ${rec[key]}`);
+// }
 
-+++++++++++++++++++++++++++++++++++++++ FOR-OF LOOP IN OBJECTS +++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++ FOR-OF LOOP IN OBJECTS +++++++++++++++++++++++++++++++++++++++++
 
-this loop iterate over object values
-for(let key of Object.values(rec)){
-    console.log(key);
-}
+// this loop iterate over object values
+// for(let key of Object.values(rec)){
+//     console.log(key);
+// }
 
-this loop iterate over object keys
-for(let key of Object.keys(rec)){   
-    console.log(key);
-}
+// this loop iterate over object keys
+// for(let key of Object.keys(rec)){   
+//     console.log(key);
+// }
 
-print key value both at the same time of object 
-for(let [key,value] of Object.entries(rec)){
-    console.log(`${key} : ${value}`);
-}
+// print key value both at the same time of object 
+// for(let [key,value] of Object.entries(rec)){
+//     console.log(`${key} : ${value}`);
+// }
 
 //++++++++++++++++++++++ Some Other ways to get key and values  of object ++++++++++++++++++++++++++++++++
 // these all propertis use for the object and return the array of keys and values
 
-// let ball = {
-//     radius: 2,
-//     shape: "circle"
-// }
+let ball = {
+    radius: 2,
+    shape: "circle"
+}
 
-// console.log(Object.getOwnPropertyNames(ball));   //this will give key including non-enumerable like symbol
-// console.log(ball.hasOwnProperty("radius"));      //this will give true
-// console.log(Object.keys(ball));                  //this will print keys of object only enumerable
-// console.log(Object.values(ball));                //this will print values of object
-// console.log(Object.entries(ball));               //this will give array of key-value pair both
+console.log(Object.getOwnPropertyNames(ball));   //this will give key including non-enumerable like symbol
+console.log(ball.hasOwnProperty("radius"));      //this will give true
+console.log(Object.keys(ball));                  //this will print keys of object only enumerable
+console.log(Object.values(ball));                //this will print values of object
+console.log(Object.entries(ball));               //this will give array of key-value pair both
 
-//++++++++++++++++++++++++++++++++ object.FromEntries(obj) Method ++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++ object.FromEntries(obj) Method ++++++++++++++++++++++++++++++++++++++++
 
-// const newBall = Object.entries(ball);
-// console.log(newBall);                        //this will print array of key-value pair
+const newBall = Object.entries(ball);
+console.log(newBall);                        //this will print array of key-value pair
 
-// console.log((Object.fromEntries(newBall)));  //this will print object of key-value pair
+console.log((Object.fromEntries(newBall)));  //this will print object of key-value pair
 
-// const arr = [[1,4,6,7],["One","Two","Three"],["Hello"],[]];
+const arr = [[1,4,6,7],["One","Two","Three"],["Hello"],[]];
 
-//return only first two elements of array as key and value if only one element then value is undefined like hello. if empty array then key and value both is undefined.
-// console.log((Object.fromEntries(arr)));  
+return only first two elements of array as key and value if only one element then value is undefined like hello. if empty array then key and value both is undefined.
+console.log((Object.fromEntries(arr)));  
                                     
                                         
 
