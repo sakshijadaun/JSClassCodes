@@ -167,28 +167,28 @@
 //++++++++++++++++++++++ Some Other ways to get key and values  of object ++++++++++++++++++++++++++++++++
 // these all propertis use for the object and return the array of keys and values
 
-let ball = {
-    radius: 2,
-    shape: "circle"
-}
+// let ball = {
+//     radius: 2,
+//     shape: "circle"
+// }
 
-console.log(Object.getOwnPropertyNames(ball));   //this will give key including non-enumerable like symbol
-console.log(ball.hasOwnProperty("radius"));      //this will give true
-console.log(Object.keys(ball));                  //this will print keys of object only enumerable
-console.log(Object.values(ball));                //this will print values of object
-console.log(Object.entries(ball));               //this will give array of key-value pair both
+// console.log(Object.getOwnPropertyNames(ball));   //this will give key including non-enumerable like symbol
+// console.log(ball.hasOwnProperty("radius"));      //this will give true
+// console.log(Object.keys(ball));                  //this will print keys of object only enumerable
+// console.log(Object.values(ball));                //this will print values of object
+// console.log(Object.entries(ball));               //this will give array of key-value pair both
 
-++++++++++++++++++++++++++++++++ object.FromEntries(obj) Method ++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++ object.FromEntries(obj) Method ++++++++++++++++++++++++++++++++++++++++
 
-const newBall = Object.entries(ball);
-console.log(newBall);                        //this will print array of key-value pair
+// const newBall = Object.entries(ball);
+// console.log(newBall);                        //this will print array of key-value pair
 
-console.log((Object.fromEntries(newBall)));  //this will print object of key-value pair
+// console.log((Object.fromEntries(newBall)));  //this will print object of key-value pair
 
-const arr = [[1,4,6,7],["One","Two","Three"],["Hello"],[]];
+// const arr = [[1,4,6,7],["One","Two","Three"],["Hello"],[]];
 
-return only first two elements of array as key and value if only one element then value is undefined like hello. if empty array then key and value both is undefined.
-console.log((Object.fromEntries(arr)));  
+// return only first two elements of array as key and value if only one element then value is undefined like hello. if empty array then key and value both is undefined.
+// console.log((Object.fromEntries(arr)));  
                                     
                                         
 
@@ -210,52 +210,52 @@ console.log((Object.fromEntries(arr)));
 
 //+++++++++++++++++++++++++++++++++++++++ Using iteration +++++++++++++++++++++++++++++++++++++++++++++++
 
-// let src={
-//     a: 10,
-//     b: 11,
-//     c: 12
-// };
-// let dest = {};
+let src={
+    a: 10,
+    b: 11,
+    c: 12
+};
+let dest = {};
 
-// for(var key in src){
-//     dest[key]=src[key];
-//     console.log(key,src[key]);
-// }
-// console.log(dest);
-// checking it copy in dest object or points to reference number so it copy in dest object
-// src.a++;
-// console.log(src)
-// console.log(dest);
+for(var key in src){
+    dest[key]=src[key];
+    console.log(key,src[key]);
+}
+console.log(dest);
+checking it copy in dest object or points to reference number so it copy in dest object
+src.a++;
+console.log(src)
+console.log(dest);
 
-//+++++++++++++++++++++++++++++++++++++ Object cloning using  assign +++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++ Object cloning using  assign +++++++++++++++++++++++++++++++++++++
 
-// let src ={
-//     a: 10,
-//     b: 11, 
-//     c: 12
-// };
+let src ={
+    a: 10,
+    b: 11, 
+    c: 12
+};
 
-// let src2 = { d: 13};
+let src2 = { d: 13};
 
-// let dest = Object.assign({},src,src2);
-// console.log(dest);
+let dest = Object.assign({},src,src2);
+console.log(dest);
 
-// src.a++;
-// console.log(dest);
+src.a++;
+console.log(dest);
 
-//+++++++++++++++++++++++++++++++++++++++ Object cloning using spread ++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++ Object cloning using spread ++++++++++++++++++++++++++++++++++++
 
-// let src ={
-//     a: 10,
-//     b: 11, 
-//     c: 12
-// };
+let src ={
+    a: 10,
+    b: 11, 
+    c: 12
+};
 
-// let dest ={...src};   
-// console.log(dest);
+let dest ={...src};   
+console.log(dest);
 
-// src.a++;
-// console.log(dest);
+src.a++;
+console.log(dest);
 
 //+++++++++++++++++++++++++++++++++ Maps ++++++++++++++++++++++++++++++++++++++++++++
 
