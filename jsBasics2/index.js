@@ -45,32 +45,32 @@
 //  console.log(rectangle1.len);
 //  rectangle1.draw();
 
-+++++++++++++++++++++++++++++ CONSTRUCTOR FUNCTION +++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++ CONSTRUCTOR FUNCTION +++++++++++++++++++++++++++++++++
 
-function CreateRectangle(){
-    this.length = 2,
-    this.width = 5,
-    this.draw = function(){
-        console.log("Sakshi");
-    };
-}
-let rectangle1 = new CreateRectangle();
-console.log(rectangle1.length);
-rectangle1.draw();
-
-//++++++++++++++++++++++ Constructor function using parameter ++++++++++++++++++++++++
-
-// function CreateRectangle2(len,wid){
-//     this.lenght = len;
-//     this.width = wid;
-//     this.draw=function(){
+// function CreateRectangle(){
+//     this.length = 2,
+//     this.width = 5,
+//     this.draw = function(){
 //         console.log("Sakshi");
 //     };
 // }
-// let rectangle2 = new CreateRectangle2(3,5);
-// console.log(rectangle2.len);
-// rectangle2.draw();
-// console.log(typeof createRectangle2);
+// let rectangle1 = new CreateRectangle();
+// console.log(rectangle1.length);
+// rectangle1.draw();
+
+//++++++++++++++++++++++ Constructor function using parameter ++++++++++++++++++++++++
+
+function CreateRectangle2(len,wid){
+    this.lenght = len;
+    this.width = wid;
+    this.draw=function(){
+        console.log("Sakshi");
+    };
+}
+let rectangle2 = new CreateRectangle2(3,5);
+console.log(rectangle2.len);
+rectangle2.draw();
+console.log(typeof createRectangle2);
 
 //++++++++++++++++++++ ADD AND REMOVE PROPERTIES IN OBJECT ++++++++++++++++++++++++++
 
