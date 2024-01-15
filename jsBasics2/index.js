@@ -31,32 +31,32 @@
 
 //+++++++++++++++++++++++ FACTORY FUNCTION USING INPUT PARAMETER ++++++++++++++++++++++
 
- function createRectangle(length,width){
-    return rectangle = {
-        length,    (it means length: length or we can use other variable name also)
-        width,     (it means width: width)
-        draw(){
-            console.log("Hello")
-        }
-    };
-
- }
- let rectangle1 = createRectangle(2,4);
- console.log(rectangle1.len);
- rectangle1.draw();
-
-//+++++++++++++++++++++++++++++ CONSTRUCTOR FUNCTION +++++++++++++++++++++++++++++++++
-
-// function CreateRectangle(){
-//     this.length = 2,
-//     this.width = 5,
-//     this.draw = function(){
-//         console.log("Sakshi");
+//  function createRectangle(length,width){
+//     return rectangle = {
+//         length,    (it means length: length or we can use other variable name also)
+//         width,     (it means width: width)
+//         draw(){
+//             console.log("Hello")
+//         }
 //     };
-// }
-// let rectangle1 = new CreateRectangle();
-// console.log(rectangle1.length);
-// rectangle1.draw();
+
+//  }
+//  let rectangle1 = createRectangle(2,4);
+//  console.log(rectangle1.len);
+//  rectangle1.draw();
+
++++++++++++++++++++++++++++++ CONSTRUCTOR FUNCTION +++++++++++++++++++++++++++++++++
+
+function CreateRectangle(){
+    this.length = 2,
+    this.width = 5,
+    this.draw = function(){
+        console.log("Sakshi");
+    };
+}
+let rectangle1 = new CreateRectangle();
+console.log(rectangle1.length);
+rectangle1.draw();
 
 //++++++++++++++++++++++ Constructor function using parameter ++++++++++++++++++++++++
 
