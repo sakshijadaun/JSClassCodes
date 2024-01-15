@@ -332,22 +332,22 @@
 
 //+++++++++++++++++++++++++++++++++++++++++++ Iterate over Maps ++++++++++++++++++++++++++++++++++++++++
 
-let map = new Map([
-    ["father","mother"],
-    ["brother","sister"]
+// let map = new Map([
+//     ["father","mother"],
+//     ["brother","sister"]
 
-]);
+// ]);
 
-++++++++++++++++++ for-of loop +++++++++++++++++++++++++
-for (const key of map) {
-  console.log(key);   //this will print map
-  console.log(map[key]);  //this will print undefined
-}
+// ++++++++++++++++++ for-of loop +++++++++++++++++++++++++
+// for (const key of map) {
+//   console.log(key);   //this will print map
+//   console.log(map[key]);  //this will print undefined
+// }
 
-+++++++++++++++++++++++++++++ for-in loop +++++++++++++++++++++
-for(const key in map){
-    console.log(key);    //can not directly use for-in loop 
-}
+// +++++++++++++++++++++++++++++ for-in loop +++++++++++++++++++++
+// for(const key in map){
+//     console.log(key);    //can not directly use for-in loop 
+// }
 
 
 
