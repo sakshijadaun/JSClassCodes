@@ -108,61 +108,61 @@
 // console.log(a);
 
 //+++++++++++++++++++++++++++++++++ REFERENCE DATATYPE +++++++++++++++++++++++++++++++
-let a = {value: 10};
-let b =  a;
-a.value++;
-console.log(a.value);
-console.log(b.value);
+// let a = {value: 10};
+// let b =  a;
+// a.value++;
+// console.log(a.value);
+// console.log(b.value);
 
-let a = {value: 10};
-function inc(a){
-    a.value++;
-    console.log(a.value);
-}
-inc(a);
-inc({value: 6}); //pass the different value of a object it will update value 10 to 6.)
-console.log(a.value);
+// let a = {value: 10};
+// function inc(a){
+//     a.value++;
+//     console.log(a.value);
+// }
+// inc(a);
+// inc({value: 6}); //pass the different value of a object it will update value 10 to 6.)
+// console.log(a.value);
 
 //++++++++++++++++++++++ ITERATING OVER OBJECTS USING FOR-IN LOOP AND FOR-OF LOOP +++++++++++++++++++++++++
 
-// let rec = {
-//     length: 2,
-//     width: 3,
-//     1 : 4      //This 1 property will iterate first before the lenght and the width
-// };
-// rec.height = 5;  //adding a property to rec object
+let rec = {
+    length: 2,
+    width: 3,
+    1 : 4      //This 1 property will iterate first before the lenght and the width
+};
+rec.height = 5;  //adding a property to rec object
 
-//++++++++++++++++++++++++++++++ Print key and value (for-in loop) ++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++ Print key and value (for-in loop) ++++++++++++++++++++++++++++++++++++++
 
-// for(let key in rec){ 
-    //here key are reflected through value variable and key and value both are reflected through rec[key]
+for(let key in rec){ 
+    here key are reflected through value variable and key and value both are reflected through rec[key]
 
-    // console.log(key);     //this will print keys of object  1,length,width
-    // console.log(rec[key]);   //this will print value of keys 4,3,2
+    console.log(key);     //this will print keys of object  1,length,width
+    console.log(rec[key]);   //this will print value of keys 4,3,2
     
-// }
+}
 
-// print key value both at the same time of object
-// for(key in rec){
-//     console.log(`${key} : ${rec[key]}`);
-// }
+print key value both at the same time of object
+for(key in rec){
+    console.log(`${key} : ${rec[key]}`);
+}
 
-//+++++++++++++++++++++++++++++++++++++++ FOR-OF LOOP IN OBJECTS +++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++ FOR-OF LOOP IN OBJECTS +++++++++++++++++++++++++++++++++++++++++
 
-//this loop iterate over object values
-// for(let key of Object.values(rec)){
-//     console.log(key);
-// }
+this loop iterate over object values
+for(let key of Object.values(rec)){
+    console.log(key);
+}
 
-//this loop iterate over object keys
-// for(let key of Object.keys(rec)){   
-//     console.log(key);
-// }
+this loop iterate over object keys
+for(let key of Object.keys(rec)){   
+    console.log(key);
+}
 
-//print key value both at the same time of object 
-// for(let [key,value] of Object.entries(rec)){
-//     console.log(`${key} : ${value}`);
-// }
+print key value both at the same time of object 
+for(let [key,value] of Object.entries(rec)){
+    console.log(`${key} : ${value}`);
+}
 
 //++++++++++++++++++++++ Some Other ways to get key and values  of object ++++++++++++++++++++++++++++++++
 // these all propertis use for the object and return the array of keys and values
