@@ -93,35 +93,35 @@
 // than it reflects in original value.
 
 // ++++++++++++++++++++++++++++++ PRIMITIVE DATATYPE ++++++++++++++++++++++++++++++++
-let a = 10;
-let b = a;
- a++;
- console.log(a);
- console.log(b);
+// let a = 10;
+// let b = a;
+//  a++;
+//  console.log(a);
+//  console.log(b);
 
-let a=10;
-function inc(a){
-    a++;
-    console.log(a);
-}
-inc(a);
-console.log(a);
-
-//+++++++++++++++++++++++++++++++++ REFERENCE DATATYPE +++++++++++++++++++++++++++++++
-// let a = {value: 10};
-// let b =  a;
-// a.value++;
-// console.log(a.value);
-// console.log(b.value);
-
-// let a = {value: 10};
+// let a=10;
 // function inc(a){
-//     a.value++;
-//     console.log(a.value);
+//     a++;
+//     console.log(a);
 // }
 // inc(a);
-// inc({value: 6}); //pass the different value of a object it will update value 10 to 6.)
-// console.log(a.value);
+// console.log(a);
+
+//+++++++++++++++++++++++++++++++++ REFERENCE DATATYPE +++++++++++++++++++++++++++++++
+let a = {value: 10};
+let b =  a;
+a.value++;
+console.log(a.value);
+console.log(b.value);
+
+let a = {value: 10};
+function inc(a){
+    a.value++;
+    console.log(a.value);
+}
+inc(a);
+inc({value: 6}); //pass the different value of a object it will update value 10 to 6.)
+console.log(a.value);
 
 //++++++++++++++++++++++ ITERATING OVER OBJECTS USING FOR-IN LOOP AND FOR-OF LOOP +++++++++++++++++++++++++
 
